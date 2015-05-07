@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
-    var WechatShare = require('WechatShare');
-    var YiXinShare = require('YiXinShare');
+    var Wechat = require('Wechat');
+    var YiXin = require('YiXin');
 
     /**
      *
@@ -23,20 +23,20 @@ define(function(require, exports, module) {
         option.imageurl = option.imageurl || option.thumburl;
 
 
-        updateWechatShareMeta(option.title,option.summary,option.thumburl || option.imageurl);
-        updateYiXinShareMeta(option.summary,option.thumburl || option.imageurl);
+        updateWechatMeta(option.title,option.summary,option.thumburl || option.imageurl);
+        updateYiXinMeta(option.summary,option.thumburl || option.imageurl);
     }
 
-    function updateWechatShareMeta(title,content,link,img){
-        WechatShare({
+    function updateWechatMeta(title,content,link,img){
+        Wechat({
             title: title,
             content: content,
             link: link ,
             img_url: img
         });
     }
-    function updateYiXinShareMeta(content,img){
-        YiXinShare({
+    function updateYiXinMeta(content,img){
+        YiXin({
             content: content,
             img: img
         });
