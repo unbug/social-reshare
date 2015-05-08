@@ -1,6 +1,6 @@
 define(function(require, exports, module) {
-    var Wechat = require('Wechat');
-    var YiXin = require('YiXin');
+    var Wechat = require('lib/Wechat');
+    var YiXin = require('lib/YiXin');
 
     /**
      *
@@ -13,7 +13,7 @@ define(function(require, exports, module) {
          link String 'share link'
          }
      */
-     function SocialReshare(option){
+     function SocialAppReshare(option){
         option = option || {};
         option.link = option.link || window.location.href;
         option.title = option.title || document.title;
@@ -42,5 +42,7 @@ define(function(require, exports, module) {
         });
     }
 
-    return SocialReshare;
+    window.SocialAppReshare = SocialAppReshare;
+
+    return SocialAppReshare;
 });

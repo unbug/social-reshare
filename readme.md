@@ -1,15 +1,23 @@
 Readme
 =========
 通常分享一个网页到社交平台（如，微信，易信等），用户在这些平台的 app 里打开并进行二次分享时，理想的分享格式会对你的网页带来可观的流量，不可忽视。
-这些平台有的去抓取特定的内容，有的去抓取指定的 meta 标签，有的则需要监听事件，比较复杂。```SocialReshare``` 通过一个方法简化这些操作。
+这些平台有的去抓取特定的内容，有的去抓取指定的 meta 标签，有的则需要监听事件，比较复杂。```SocialAppReshare``` 通过一个方法简化这些操作。
 
+
+Install
+==========
+```shell
+bower install social-reshare --save-dev
+```
 
 Get started
 ==========
-```js
-var SocialReshare = require('SocialReshare');
+1. 通过 AMD 方式：
 
-SocialReshare({
+```js
+var SAR = require('SocialAppReshare');
+
+SAR({
                title: String 'share title',
                text: String 'share text',
                summary: String 'share summary',
@@ -18,6 +26,22 @@ SocialReshare({
                link: String 'share link'
            });
 
+```
+
+2. 通过引入脚本方式
+
+```html
+<script src="dist/sar.min.js"></script>
+<script>
+    SocialAppReshare({
+               title: String 'share title',
+               text: String 'share text',
+               summary: String 'share summary',
+               imageurl: String 'share image url',
+               thumburl: String 'share image thumb url',
+               link: String 'share link'
+           });
+</script>
 ```
 
 Contribute
@@ -33,6 +57,5 @@ Contribute
 
 FAQ
 ===============
-- 本项目目前只有 AMD 版本，很快会有 gulp 工具支持合并及压缩,并提交到 Bower。
 - 本项目只能处理支持 client 端个性化格式的平台，服务端爬虫类的不支持（如 Facebook）。
 - 微信貌似有个域名白名单，如果你的页面在微信里无效可以试试注册公众账号添加。
