@@ -1,0 +1,23 @@
+{
+  "name": "social-reshare",
+  "version": "0.0.3",
+  "homepage": "https://github.com/unbug/social-reshare",
+  "authors": [
+    "unbug <tidelgl@gmail.com>"
+  ],
+  "description": "social app reshare web pages with specific format",
+  "main": "SocialAppReshare.js",
+  "keywords": [
+    "wechat",
+    "yixin",
+    "social-app-share"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

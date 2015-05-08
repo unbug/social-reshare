@@ -1,6 +1,6 @@
 {
   "name": "social-reshare",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "social app reshare web pages with specific format",
   "main": "SocialReshare.js",
   "scripts": {
