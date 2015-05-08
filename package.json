@@ -2,7 +2,7 @@
   "name": "social-reshare",
   "version": "0.0.3",
   "description": "social app reshare web pages with specific format",
-  "main": "SocialReshare.js",
+  "main": "SocialAppReshare.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
