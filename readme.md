@@ -15,7 +15,7 @@ Get started
 ==========
 有两种方式使用本脚本
 
-1. 通过 AMD 方式
+1.通过 AMD 方式
 
 ```js
 var SAR = require('SocialAppReshare');
@@ -32,7 +32,7 @@ SAR({
 ```
 
 
-2. 通过引入脚本方式
+2.通过引入脚本方式
 
 ```html
 <script src="dist/sar.min.js"></script>
