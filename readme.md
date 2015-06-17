@@ -13,7 +13,7 @@ bower install social-reshare --save-dev
 
 Get started
 ==========
-1. 通过 AMD 方式：
+1. 通过 AMD 方式
 
 ```js
 var SAR = require('SocialAppReshare');
