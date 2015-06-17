@@ -13,6 +13,8 @@ bower install social-reshare --save-dev
 
 Get started
 ==========
+有两种方式使用本脚本
+
 1. 通过 AMD 方式
 
 ```js
@@ -28,6 +30,7 @@ SAR({
 });
 
 ```
+
 
 2. 通过引入脚本方式
 
